@@ -22,31 +22,31 @@ if (jwt) {
 function logOut() {
     document.cookie = "jwt= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
     alert('logout Successfully')
-    location.replace("https://js-taks.herokuapp.com/index.html")
+    location.replace("https://jayjstask.herokuapp.com/index.html")
 }
 
-if (document.URL == "https://js-taks.herokuapp.com/index.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/index.html") {
     if (jwt) {
-        location.replace("https://js-taks.herokuapp.com/Dashboard.html")
+        location.replace("https://jayjstask.herokuapp.com/Dashboard.html")
     }
 }
 
  
 
-if (document.URL == "https://js-taks.herokuapp.com/profile.html" || document.URL == "https://js-taks.herokuapp.com/editprofile.html" || document.URL == "https://js-taks.herokuapp.com/changePassword.html" )  {
+if (document.URL == "https://jayjstask.herokuapp.com/profile.html" || document.URL == "https://jayjstask.herokuapp.com/editprofile.html" || document.URL == "https://jayjstask.herokuapp.com/changePassword.html" )  {
     if (!jwt) {
-        location.replace("https://js-taks.herokuapp.com/index.html")
+        location.replace("https://jayjstask.herokuapp.com/index.html")
     }
 }
 
-if (document.URL == "https://js-taks.herokuapp.com/Dashboard.html" ) {
+if (document.URL == "https://jayjstask.herokuapp.com/Dashboard.html" ) {
     if (!jwt) {
-        location.replace("https://js-taks.herokuapp.com/index.html")
+        location.replace("https://jayjstask.herokuapp.com/index.html")
     }
 } 
-if (document.URL == "https://js-taks.herokuapp.com/regestration.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/regestration.html") {
     if (jwt) {
-        location.replace("https://js-taks.herokuapp.com/Dashboard.html")
+        location.replace("https://jayjstask.herokuapp.com/Dashboard.html")
     }
 
 }

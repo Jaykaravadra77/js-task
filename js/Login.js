@@ -19,7 +19,7 @@ frm.addEventListener('submit', (e) => {
                
                 document.cookie = "jwt=" + JSON.stringify(ans);
                 alert('login success');
-                location.replace("https://js-taks.herokuapp.com/Dashboard.html");
+                location.replace("https://jayjstask.herokuapp.com/Dashboard.html");
             } else {
                alert("invalid Credentials")
             }

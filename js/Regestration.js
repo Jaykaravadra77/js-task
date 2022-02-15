@@ -126,7 +126,7 @@ if (document.URL == "https://jayjstask.herokuapp.com/regestration.html") {
     })
 }
 
-if (document.URL == "https://js-taks.herokuapp.com/profile.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/profile.html") {
     let eval = document.getElementById('email');
     let nval = document.getElementById('name');
     let mval = document.getElementById('mobile');
@@ -175,7 +175,7 @@ if (document.URL == "https://js-taks.herokuapp.com/profile.html") {
             });
             alert('updated Successfully');
             localStorage.setItem('arrOfRecords', JSON.stringify(newArr));
-            location.replace('https://js-taks.herokuapp.com/profile.html');
+            location.replace('https://jayjstask.herokuapp.com/profile.html');
             // document.cookie = "jwt=" + JSON.stringify(ans);
         }
 

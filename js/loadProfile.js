@@ -6,15 +6,15 @@ let gender = document.getElementById('gender');
 let btnedit = document.getElementById('btnedit');
 let cp = document.querySelector('.cp');
 
-if (document.URL == "https://js-taks.herokuapp.com/profile.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/profile.html") {
     let jwt1 = document.cookie;
     let substr = jwt1.substring(4, jwt1.length);
     let parsedData = JSON.parse(substr);
     btnedit.addEventListener('click', () => {
-        location.replace("https://js-taks.herokuapp.com/editprofile.html")
+        location.replace("https://jayjstask.herokuapp.com/editprofile.html")
     })
     cp.addEventListener('click', () => {
-        location.replace("https://js-taks.herokuapp.com/changePassword.html")
+        location.replace("https://jayjstask.herokuapp.com/changePassword.html")
     })
 
     console.log(parsedData);
@@ -29,7 +29,7 @@ if (document.URL == "https://js-taks.herokuapp.com/profile.html") {
 
 }
 
-if (document.URL == "https://js-taks.herokuapp.com/editprofile.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/editprofile.html") {
     let jwt1 = document.cookie;
     if (jwt1) {
         let substr = jwt1.substring(4, jwt1.length);
