@@ -126,7 +126,7 @@ if (document.URL == "https://js-taks.herokuapp.com/regestration.html") {
     })
 }
 
-if (document.URL == "https://js-taks.herokuapp.com/editprofile.html") {
+if (document.URL == "https://js-taks.herokuapp.com/profile.html") {
     let eval = document.getElementById('email');
     let nval = document.getElementById('name');
     let mval = document.getElementById('mobile');
