@@ -31,6 +31,12 @@ if (document.URL == "https://jayjstask.herokuapp.com/index.html") {
     }
 }
 
+if (document.URL == "https://jayjstask.herokuapp.com") {
+    if (jwt) {
+        location.replace("https://jayjstask.herokuapp.com/Dashboard.html")
+    }
+}
+
  
 
 if (document.URL == "https://jayjstask.herokuapp.com/profile.html" || document.URL == "https://jayjstask.herokuapp.com/editprofile.html" || document.URL == "https://jayjstask.herokuapp.com/changePassword.html" )  {
@@ -42,8 +48,6 @@ if (document.URL == "https://jayjstask.herokuapp.com/profile.html" || document.U
 if (document.URL == "https://jayjstask.herokuapp.com/Dashboard.html" ) {
     if (!jwt) {
         location.replace("https://jayjstask.herokuapp.com/index.html")
-    }else{
-        location.replace("https://jayjstask.herokuapp.com/Dashboard.html")
     }
 } 
 if (document.URL == "https://jayjstask.herokuapp.com/regestration.html") {
