@@ -38,7 +38,7 @@ function validateName(name) {
     }
 
 }
-if (document.URL == "https://js-taks.herokuapp.com/regestration.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/regestration.html") {
     let form = document.getElementById('form');
 
 
