@@ -126,7 +126,7 @@ if (document.URL == "https://jayjstask.herokuapp.com/regestration.html") {
     })
 }
 
-if (document.URL == "https://jayjstask.herokuapp.com/profile.html") {
+if (document.URL == "https://jayjstask.herokuapp.com/editprofile.html") {
     let eval = document.getElementById('email');
     let nval = document.getElementById('name');
     let mval = document.getElementById('mobile');
