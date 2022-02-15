@@ -42,6 +42,8 @@ if (document.URL == "https://jayjstask.herokuapp.com/profile.html" || document.U
 if (document.URL == "https://jayjstask.herokuapp.com/Dashboard.html" ) {
     if (!jwt) {
         location.replace("https://jayjstask.herokuapp.com/index.html")
+    }else{
+        location.replace("https://jayjstask.herokuapp.com/Dashboard.html")
     }
 } 
 if (document.URL == "https://jayjstask.herokuapp.com/regestration.html") {
