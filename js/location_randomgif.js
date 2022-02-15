@@ -29,7 +29,7 @@ if (navigator.geolocation) {
         lon = position.coords.longitude;
         lat = position.coords.latitude;
         const base =
-            `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
             `lon=${lon}&appid=e8666abc83f73331f436d473e7653ea5`;
 
         fetch(base)
