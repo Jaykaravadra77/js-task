@@ -38,7 +38,7 @@ function validateName(name) {
     }
 
 }
-if (document.URL == "http://127.0.0.1:5502/regestration.html") {
+if (document.URL == "https://js-taks.herokuapp.com/regestration.html") {
     let form = document.getElementById('form');
 
 
@@ -126,7 +126,7 @@ if (document.URL == "http://127.0.0.1:5502/regestration.html") {
     })
 }
 
-if (document.URL == "http://127.0.0.1:5502/editprofile.html") {
+if (document.URL == "https://js-taks.herokuapp.com/editprofile.html") {
     let eval = document.getElementById('email');
     let nval = document.getElementById('name');
     let mval = document.getElementById('mobile');
@@ -175,7 +175,7 @@ if (document.URL == "http://127.0.0.1:5502/editprofile.html") {
             });
             alert('updated Successfully');
             localStorage.setItem('arrOfRecords', JSON.stringify(newArr));
-            location.replace('http://127.0.0.1:5502/profile.html');
+            location.replace('https://js-taks.herokuapp.com/profile.html');
             // document.cookie = "jwt=" + JSON.stringify(ans);
         }
 

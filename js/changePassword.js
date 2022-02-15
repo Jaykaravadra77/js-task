@@ -28,7 +28,7 @@ formcp.addEventListener('submit', (e) => {
                     count++;
                     parsed[i].password = npass.value;
                     localStorage.setItem('arrOfRecords', JSON.stringify(parsed));
-                    location.replace('http://127.0.0.1:5502/Dashboard.html')
+                    location.replace('https://js-taks.herokuapp.com/Dashboard.html')
                     break;
                 }
             }

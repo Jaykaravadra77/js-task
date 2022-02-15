@@ -22,31 +22,31 @@ if (jwt) {
 function logOut() {
     document.cookie = "jwt= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
     alert('logout Successfully')
-    location.replace("http://127.0.0.1:5502/index.html")
+    location.replace("https://js-taks.herokuapp.com/index.html")
 }
 
-if (document.URL == "http://127.0.0.1:5502/index.html") {
+if (document.URL == "https://js-taks.herokuapp.com/index.html") {
     if (jwt) {
-        location.replace("http://127.0.0.1:5502/Dashboard.html")
+        location.replace("https://js-taks.herokuapp.com/Dashboard.html")
     }
 }
 
  
 
-if (document.URL == "http://127.0.0.1:5502/profile.html" || document.URL == "http://127.0.0.1:5502/editprofile.html" || document.URL == "http://127.0.0.1:5502/changePassword.html" )  {
+if (document.URL == "https://js-taks.herokuapp.com/profile.html" || document.URL == "https://js-taks.herokuapp.com/editprofile.html" || document.URL == "https://js-taks.herokuapp.com/changePassword.html" )  {
     if (!jwt) {
-        location.replace("http://127.0.0.1:5502/index.html")
+        location.replace("https://js-taks.herokuapp.com/index.html")
     }
 }
 
-if (document.URL == "http://127.0.0.1:5502/Dashboard.html" ) {
+if (document.URL == "https://js-taks.herokuapp.com/Dashboard.html" ) {
     if (!jwt) {
-        location.replace("http://127.0.0.1:5502/index.html")
+        location.replace("https://js-taks.herokuapp.com/index.html")
     }
 } 
-if (document.URL == "http://127.0.0.1:5502/regestration.html") {
+if (document.URL == "https://js-taks.herokuapp.com/regestration.html") {
     if (jwt) {
-        location.replace("http://127.0.0.1:5502/Dashboard.html")
+        location.replace("https://js-taks.herokuapp.com/Dashboard.html")
     }
 
 }

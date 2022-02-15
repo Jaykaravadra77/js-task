@@ -6,15 +6,15 @@ let gender = document.getElementById('gender');
 let btnedit = document.getElementById('btnedit');
 let cp = document.querySelector('.cp');
 
-if (document.URL == "http://127.0.0.1:5502/profile.html") {
+if (document.URL == "https://js-taks.herokuapp.com/profile.html") {
     let jwt1 = document.cookie;
     let substr = jwt1.substring(4, jwt1.length);
     let parsedData = JSON.parse(substr);
     btnedit.addEventListener('click', () => {
-        location.replace("http://127.0.0.1:5502/editprofile.html")
+        location.replace("https://js-taks.herokuapp.com/editprofile.html")
     })
     cp.addEventListener('click', () => {
-        location.replace("http://127.0.0.1:5502/changePassword.html")
+        location.replace("https://js-taks.herokuapp.com/changePassword.html")
     })
 
     console.log(parsedData);
@@ -29,7 +29,7 @@ if (document.URL == "http://127.0.0.1:5502/profile.html") {
 
 }
 
-if (document.URL == "http://127.0.0.1:5502/editprofile.html") {
+if (document.URL == "https://js-taks.herokuapp.com/editprofile.html") {
     let jwt1 = document.cookie;
     if (jwt1) {
         let substr = jwt1.substring(4, jwt1.length);

@@ -19,7 +19,7 @@ frm.addEventListener('submit', (e) => {
                
                 document.cookie = "jwt=" + JSON.stringify(ans);
                 alert('login success');
-                location.replace("http://127.0.0.1:5502/Dashboard.html");
+                location.replace("https://js-taks.herokuapp.com/Dashboard.html");
             } else {
                alert("invalid Credentials")
             }
