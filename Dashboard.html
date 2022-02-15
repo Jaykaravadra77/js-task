@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="/index.html" id="login">
+                <li>Login</li>
+            </a>
+            <a href="/profile.html" id="profile">
+                <li>Profile</li>
+            </a>
+            <a id="regestration" href="/regestration.html">
+                <li>Registration</li>
+            </a>
+            <a id="dashboard" href="/Dashboard.html">
+                <li>Dashboard</li>
+            </a>
+            <a id="logout" style="cursor: pointer;">
+                <li>Logout</li>
+            </a>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="leftmenu">
+
+            <div class="weatherinfocontainer">
+                <img src="/images/weather.gif" alt="">
+                <h2 style="margin-top: 7px;" id="temprature"></h2>
+                <h2 style="margin-top: 7px;" id="descreption"></h2>
+                <h2 style="margin-top: 7px;" id="location"></h2>
+                <h1 style="margin-top: 7px;" id="time"></h1>
+            </div>
+            <div class="imgdiv">
+                <h1>Devloper's Life</h1>
+                <img id="img" width="100%" src=" " alt="">
+            </div>
+        </div>
+        <div class="taskcontainer">
+            <div class="addsection">
+                <!-- <input type="text" name="title" id="title" placeholder="Enter Task Name"> -->
+                <input id="inputtext" type="text" name="task" placeholder="Enter Task Description">
+                <button id="btntadd">Add Task</button>
+            </div>
+            <div class="tasks">
+                <div id="ptaskcontainer">
+                    <h1>Pending Task</h1>
+                    <div id ="ptask">
+
+                    </div>
+                    
+                 </div>
+                 <div id="ctaskcontainer">
+                    <h1>Completed Task</h1>
+                    <div id="ctask">
+                    </div>
+                 </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/location_randomgif.js"></script>
+    <script src="/js/checkAuth.js"></script>
+    <script src="/js/taskReleted/addTask.js"></script>
+    
+</body>
+
+</html>
+

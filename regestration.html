@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/regestration.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <a href="/index.html" id="login">
+        <li>Login</li>
+      </a>
+      <a href="/profile.html" id="profile">
+        <li>Profile</li>
+      </a>
+      <a id="regestration" href="/regestration.html">
+        <li>Registration</li>
+      </a>
+      <a id="dashboard" href="/Dashboard.html">
+        <li>Dashboard</li>
+      </a>
+      <a id="logout" style="cursor: pointer;">
+        <li>Logout</li>
+      </a>
+    </ul>
+
+  </nav>
+  <div class="formcontainer" style="height: 80vh;">
+    <div>
+      <img style="margin-left: 70px;" src="/images/vector-button-register-260nw-118992112.jpg" alt="Loading"
+        width="200px" height="150px">
+      <form id="form">
+        <label class="labelstyle" for="email">Email</label><br>
+        <input type="email" class="inputstyle" id="email" name="firstname" placeholder="Your email..">
+        <br>
+
+        <label class="labelstyle" for="name">Name</label><br>
+        <input type="text" required class="inputstyle" id="name" name="name" placeholder="Your name..">
+        <br>
+
+        <label class="labelstyle" for="mobile">Mobile_No</label><br>
+        <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile-no.." class="inputstyle" pattern="^\d{10}$"
+          required>
+        <br>
+
+        <label class="labelstyle" for="gender">Gender</label><br>
+        <select id="gender" required name="gender">
+          <option value="" selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+
+        <label class="labelstyle" for="date">Date of Birth</label><br>
+        <input type="date" name="date" id="date" class="inputstyle" required>
+        <br>
+
+        <label class="labelstyle" for="password">Password</label><br>
+        <input type="password" placeholder="password.." id="password" name="password" class="inputstyle" required>
+        <button name="btn" class="btnreg" type="submit" id="btn" value="Submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <script src="/js/Regestration.js"></script>
+  <script src="/js//checkAuth.js"></script>
+</body>
+
+</html>

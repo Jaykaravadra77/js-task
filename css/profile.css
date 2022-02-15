@@ -1,0 +1,65 @@
+.profilecontainer{
+    display: flex;
+ 
+    justify-content: center;
+     
+     
+   
+}
+ .h3style{
+     margin-top: 5px;
+     margin-left: 100px;
+ }
+ .profilecontainer>div>img{
+     margin-left: 100px;
+     margin-top: 10px;
+     border-radius: 110px;
+ }
+ 
+
+ .profilecontainer > div{
+     display: flex;
+     width: 400px;
+     /* background-color: rgb(114, 43, 43); */
+     flex-direction: column;
+     margin-top: 20vh;
+     background-color: grey;
+     padding: 20px;
+     border-radius: 10px;
+     color: rgb(255, 255, 255);
+    }
+
+    .profilecontainer > div>button{
+        color: red;
+        width: 100px;
+        align-self: center;
+        margin-top: 10px;
+        height: 30px;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+
+    .btnsprofile{
+        display: flex;
+    
+        color: rosybrown;
+        justify-content: center;
+    }
+
+    .btnsprofile :first-child{
+        color: red;
+        background-color: aquamarine;
+        width: 100px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-weight: bolder;
+    }
+     .cp{ margin-top: 5px;
+        color: red;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bolder;
+        background-color: aquamarine;
+     }

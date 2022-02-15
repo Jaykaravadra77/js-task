@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/index.html" id="login">
+                <li>Login</li>
+            </a>
+            <a href="/profile.html" id="profile">
+                <li>Profile</li>
+            </a>
+            <a id="regestration" href="/regestration.html"><li>Registration</li></a>
+            <a id="dashboard" href="/Dashboard.html"> <li>Dashboard</li></a>
+            <a id="logout" style="cursor: pointer;"> <li>Logout</li></a>
+        </ul>
+     
+    </nav>
+
+     <div class="profilecontainer">
+         <div>
+         <img src="/images/profile.jpg" width="200px" height="200px" alt="">
+          <h3 class="h3style">Name :<span id="name"></span></h3>
+          <h3 class="h3style">Email :<span id="email"></span></h3>
+          <h3 class="h3style">Mobile-No:<span id="mobile"></span></h3>
+          <h3 class="h3style">Date of Birth:<span id="dob"></span></h3>
+          <h3 class="h3style">Geneder:<span id="gender"></span></h3>
+          <div class="btnsprofile"> 
+            <button id="btnedit">Edit Profile</button>
+            <button class="cp" >Change Password</button>
+          </div>
+          
+            </div>
+
+     </div>
+     <script src="/js/checkAuth.js"></script>
+     <script src="/js/loadProfile.js"></script>
+</body>
+</html>
