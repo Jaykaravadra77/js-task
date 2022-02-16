@@ -166,7 +166,7 @@ if (document.URL == "https://jayjstask.herokuapp.com/editprofile.html") {
                     parsedData.mobile = mobile;
                     parsedData.gender = gender;
                     parsedData.date = date;
-                    console.log(parsedData);
+                   
                     document.cookie = "jwt=" + JSON.stringify(parsedData);
 
                     return { email: eval.value, name, mobile, gender, date, password: parsedData.password }
@@ -183,13 +183,13 @@ if (document.URL == "https://jayjstask.herokuapp.com/editprofile.html") {
         function validateEmail(email) {
 
             var arrRec = JSON.parse(localStorage.getItem('arrOfRecords'));
-            console.log(email);
+         
 
             if (arrRec) {
                 let res = arrRec.filter((ele) => {
                     return ele.email == email;
                 })
-                console.log(res);
+              
                 if (res.length > 0) {
                     alert("Email should be unique");
                     return false;

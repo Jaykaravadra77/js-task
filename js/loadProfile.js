@@ -17,7 +17,7 @@ if (document.URL == "https://jayjstask.herokuapp.com/profile.html") {
         location.replace("https://jayjstask.herokuapp.com/changePassword.html")
     })
 
-    console.log(parsedData);
+ 
     if (jwt1) {
         namee.innerText = parsedData.name;
         email.innerText = parsedData.email;

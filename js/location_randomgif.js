@@ -28,7 +28,7 @@ if (navigator.geolocation) {
         // console.log(position);
         lon = position.coords.longitude;
         lat = position.coords.latitude;
-        console.log(lon,lat);
+      
         const base =
             `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
             `lon=${lon}&appid=e8666abc83f73331f436d473e7653ea5`;
@@ -82,7 +82,7 @@ function fetchGif() {
                         let ele = res.results[i].media[0].gif.url;
                          if(i == 0){
                             img.src=ele;
-                            console.log(i,ele);
+                           
                          }else{
                             img.src = ele;
                             await prom();

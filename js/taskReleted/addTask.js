@@ -1,4 +1,4 @@
-console.log("ADDED TAST");
+ 
 
 let taskDiv = document.querySelector('.tasks');
 let input = document.getElementById('inputtext');
@@ -272,7 +272,7 @@ taskDiv.addEventListener('click', (event) => {
     } else if (event.target.name == "delbtn") {
         let targetId = event.target.id;
 
-        console.log("Clicked");
+    
         let data = JSON.parse(localStorage.getItem(email));
 
         for (let i = 0; i < data[email].length; i++) {
